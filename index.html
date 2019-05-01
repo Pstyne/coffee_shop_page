@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Metalatte | Home</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrap">
+                    <a href="#" class="logo"><img src="images/Metalatte-logo.png"></a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <li><i class="fa fa-bars"></i></li></a>
+                    <ul class="nav-menu" id="myNav">
+                        <a href="#"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="#"><li>Drinks</li></a>
+                        <a href="#"><li>Grubs</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="prlxlogo">
+            <div class="img"></div>
+        </div>
+        <div id="prlx">
+            <div class="introimg"></div>
+        </div>
+        <div id="notprlx">
+            <div class="introimg"><img src="images/Metalatte-logo.png"/></div>
+        </div>
+        <section class="section">
+            <div class="wrap">
+                <div class="row">
+                    <div class="item-container1">
+                        <div class="item-container-padding">
+                            <div class="item about" style="color:#000">
+                                <h1>Coffee House and Bar</h1>
+                                <h3>located in the middle of nowhere</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>&nbsp;</p>
+                                <div class="btn">
+                                    <a href="about.html">
+                                        <span class="more-about">More about our coffee house and bar</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container1">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <div class="flip-img-logo">
+                                    <ul>
+                                        <li>
+                                            <div class="front" style="background-image: url(images/alcohol.jpg)">
+                                            </div>
+                                            <div class="back" style="background-image: url(images/beer.jpg)">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="front" style="background-image: url(images/cappuccino.jpg)">
+                                            </div>
+                                            <div class="back" style="background-image: url(images/chocolate-cake.jpg)">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="front" style="background-image: url(images/coffeeshop.jpg)">
+                                            </div>
+                                            <div class="back" style="background-image: url(images/coffee-1704926_1920.jpg)">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="front" style="background-image: url(images/drink.jpg)">
+                                            </div>
+                                            <div class="back" style="background-image: url(images/lattecup.jpg)">
+                                            </div>
+                                        </li>
+                                        <div class="logo-img">
+                                        </div>
+                                        <script>
+                                            
+                                            var myTimeOut  = null;
+                                            var myInterval = null;
+
+                                            var el = document.querySelectorAll("div.flip-img-logo li");
+                                            
+                                            clearInterval(myInterval);
+                                            clearTimeout(myTimeOut);
+                                            
+                                            el.forEach(function(e, i){
+                                                var time_flip = 7000;
+                                                
+                                                if (i === 0 || i === 3) {
+                                                    var time = 0;
+                                                } else {
+                                                    var time = 4000;
+                                                }
+                                                                                            
+                                                myTimeOut = setTimeout(function() {
+                                                    myInterval = setInterval(function() {
+                                                        if ( e.className === "" ) {
+                                                            e.className = "flip";
+                                                        } else {
+                                                            e.className = "";
+                                                        }
+                                                    }, time_flip);
+                                                }, time);
+                                            });
+                                            
+                                            
+                                        </script>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="wrap">
+                <div class="row">
+                    <div class="item-container1">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <div class="img-container">
+                                    <img src="images/house1.jpg">
+                                </div>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container1">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <div class="img-container2">
+                                    <img src="images/beer.jpg">
+                                </div>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="wrap">
+                <div class="row">
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <div class="img-container">
+                                    <img src="images/cowboy-hats.jpg">
+                                </div>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <div class="img-container">
+                                    <img src="images/house2.jpg">
+                                </div>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <div class="img-container">
+                                    <img src="images/bar.jpg">
+                                </div>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div id="cprlx"><div class="gal"></div></div>
+            <div class="wrap">
+                <div class="row gal-top"><h1>Gallery</h1></div>
+            </div>
+            <div class="carousel">
+                <div class="item-container">
+                    <img width="475.7" src="images/bird-818153_1920.jpg">
+                </div>
+                <div class="item-container">
+                    <img width="475.7" src="images/chocolate-cake.jpg">
+                </div>
+                <div class="item-container">
+                    <img width="475.7" src="images/coffee-671981_1920.jpg">
+                </div>
+                <div class="item-container">
+                    <img width="475.7" src="images/coffee-1704926_1920.jpg">
+                </div>
+                <div class="item-container">
+                    <img width="475.7" src="images/bird-818153_1920.jpg">
+                </div>
+                <div class="item-container">
+                    <img width="475.7" src="images/chocolate-cake.jpg">
+                </div>
+                <div class="item-container">
+                    <img width="475.7" src="images/coffee-671981_1920.jpg">
+                </div>
+                <div class="item-container">
+                    <img width="475.7" src="images/coffee-1704926_1920.jpg">
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="row gal-bottom">
+                    <div class="btn">
+                        <a href="#">
+                            <span class="more-about">view more photos</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="wrap">
+                <div class="row">
+                    <h1 style="text-align: center">Menu</h1>
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <h4>Lorem</h4>
+                                <h5>Ipsum</h5>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <h4>Lorem</h4>
+                                <h5>Ipsum</h5>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <h4>Lorem</h4>
+                                <h5>Ipsum</h5>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <h4>Lorem</h4>
+                                <h5>Ipsum</h5>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <h4>Lorem</h4>
+                                <h5>Ipsum</h5>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-container-padding">
+                            <div class="item">
+                                <h4>Lorem</h4>
+                                <h5>Ipsum</h5>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Metalatte &copy; 2018</p>
+        </footer>
+        <script>
+            
+        function myFunction() {
+            var x = document.getElementById("myNav");
+            if (x.className === "nav-menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-menu";
+            }
+        }
+            
+        function parallax() {
+            var prlx = document.getElementById('prlx');
+            var prlx2 = document.getElementById('prlxlogo');
+            var cprlx = document.getElementById('cprlx');
+            if (window.scrollY < 1000) {
+            prlx.style.top = -(window.pageYOffset / 4)+'px';
+            prlxlogo.style.top = -(window.pageYOffset / 1.8)+'px';
+            cprlx.style.top = 1000 + 'px';
+            } else if (window.scrollY > 1300) { 
+                prlxlogo.style.top = -1000 + 'px';
+                cprlx.style.top = -(window.pageYOffset / 10)+'px'; 
+            } else { return; }
+        }
+        
+        function slider(car) {
+            if (!document.onmousedown) {
+                var pos1 = 0, pos2 = 0;
+                var imgArray = document.querySelector("div.carousel").querySelectorAll("div.item-container");
+                if (document.querySelector("div.carousel")) {
+                    document.querySelector("div.carousel").onmousedown = drag;
+                } else {
+                    car.onmousedown = drag;
+                }
+
+                function drag(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+                    pos2 = e.clientX;
+                    document.onmousemove = dragCar;
+                    document.onmouseup = stopDrag;
+                }
+
+                function dragCar(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+                    pos1 = pos2 - e.clientX;
+                    pos2 = e.clientX;
+                    car.style.left = (car.offsetLeft-pos1)+ 'px';
+                    if(car.offsetLeft > 0){
+                        car.style.transition = "all .3s";
+                    } else if(car.offsetLeft < -1940){
+                        car.style.transition = "all .3s";
+                    } else {
+                        car.style.transition = "all";
+                    }
+                    document.onmouseup = stopDrag;
+                }
+
+                function stopDrag(e) {
+                    var left = car.offsetLeft-pos1;
+                    e = e || window.event;
+                    if(left <= -130 && left >= -280){
+                        car.style.transition = "all .3s";
+                        car.style.left = "-475.7px";
+                    } else if(left <= -520 && left >= -745){
+                        car.style.transition = "all .3s";
+                        car.style.left = "-951.4px";
+                    } else if(left <= -1020 && left >= -1200){
+                        car.style.transition = "all .3s";
+                        car.style.left = "-1427.1px";
+                    } else if(left <= -1530 && left >= -1730){
+                        car.style.transition = "all .3s";
+                        car.style.left = "-1902.8px";
+                    } else if(left <= -300 && left >= -450){
+                        car.style.transition = "all .3s";
+                        car.style.left = "0px"
+                    } else if(left <= -750 && left >= -910){
+                        car.style.transition = "all .3s";
+                        car.style.left = "-475.7px"
+                    } else if(left <= -1210 && left >= -1450){
+                        car.style.transition = "all .3s";
+                        car.style.left = "-951.4px"
+                    } else if(left <= -1740 && left >= -1870){
+                        car.style.transition = "all .3s";
+                        car.style.left = "-1427.1px"
+                    } else if(left <= -1900){
+                        car.style.transition = "all .3s";
+                        car.style.left = "-1902.8px"
+                    } else {
+                        car.style.transition = "all .3s";
+                        car.style.left = "0px"
+                    }
+                    document.onmousemove = null;
+                }
+            }
+        }    
+            
+        window.addEventListener("scroll", parallax);
+        window.addEventListener("mousewheel", parallax);
+        slider(document.querySelector("div.carousel"));
+        
+        </script>
+    </body>
+</html>

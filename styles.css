@@ -1,0 +1,558 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7em;
+}
+
+div p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: list-item;
+}
+
+div {
+    display: block;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/***********************
+        Navigation
+************************/
+
+nav {
+    background-color: chocolate;
+    position: fixed;
+    width: 100%;
+    opacity: 0.95;
+    overflow: hidden;
+    z-index: 1000;
+    line-height: 60px;
+}
+
+nav .nav-wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav .nav-wrap a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    color: brown;
+    font-size: 25px;
+}
+
+nav .nav-wrap .logo {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+nav .nav-wrap .logo img{
+    display: inline-block;
+    height: 40px;
+    vertical-align: middle;
+}
+
+nav .nav-wrap .icon {
+    display: none;
+}
+
+nav .nav-wrap .nav-menu {
+    background-color: chocolate;
+    float: right;
+}
+
+nav .nav-wrap .nav-menu  a {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+/**************************
+        Page Content 
+***************************/
+
+#notprlx {
+    display: none;
+}
+
+.section {
+    z-index: 1;
+}
+
+.section:nth-child(even) {
+    background-color:#999;
+}
+
+.section:nth-child(odd) {
+    background-color:#fff;
+}
+
+.section:nth-child(8) {
+    background-color: transparent;
+}
+
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 1;
+}
+
+.row:first-child {
+    padding-top: 82px;
+}
+
+.row:last-child {
+    padding-bottom: 70px;
+}
+
+.row.gal-top {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.row.gal-bottom {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.item-container, .item-container1 {
+    float: left;
+}
+
+.wrap .item-container {
+    width: 400px;
+}
+
+.wrap .item-container1 {
+    width: 600px;
+}
+
+.item-container-padding {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wrap .item-container .item {
+    text-align: center;
+}
+
+.wrap .item-container1 .item {
+    color: #fff;
+    text-align: center;
+}
+
+.item.about {
+    padding-top: 100px;
+}
+
+.item.about h1 {
+    margin-bottom: 10px;
+}
+
+.item.about h3 {
+    padding-bottom: 20px;
+}
+
+.item.about p {
+    margin-bottom: 20px;
+}
+
+.item h2 {
+    margin-top: 32px;
+    margin-bottom: 10px;
+}
+
+.section:before, .section:after, .wrap:before, .wrap:after, .row:before, .row:after, .item:before, .item::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.wrap .item-container .item .img-container, .wrap .item-container .item .img-container2 , .wrap .item-container .item .img-container3{
+    width: 370px;
+    height: 190px;
+    overflow: hidden;
+}
+
+.item-container1 .img-container img, .item-container1 .img-container2 img {
+    text-align: left;
+    width: 570px;
+    height: 342px;
+}
+
+img[src*="house2"] {
+    margin-top: -200px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn a {
+    display: inline-block;
+    border: 3px #000 solid;
+    padding: 6px 50px;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    z-index: 900;
+}
+
+.btn a span {
+    display: inline-block;
+    position: relative;
+    z-index: 900;
+}
+
+.btn a:hover {
+    color: #fff;
+}
+
+.btn a:hover:before {
+    transform: rotateY(180deg);
+}
+
+.btn a:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+
+.row.gal-top h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.row.gal-bottom .btn a {
+    border-color: #fff;
+    color: #fff;
+}
+
+.row.gal-bottom .btn a:hover {
+    color: #000;
+}
+
+.row.gal-bottom .btn a:before {
+    background-color: #fff;
+}
+
+.flip-img-logo {
+    border: 8px solid #ff514a;
+    width: 464px;
+    height: 464px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.flip-img-logo:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.flip-img-logo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flip-img-logo ul li {
+    width: 50%;
+    height: 224px;
+    float: left;
+    position: relative;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+}
+
+.flip-img-logo ul li .front {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 1.4s ease-in-out 0s;
+    -o-transition: all 1.4s ease-in-out 0s;
+    transition: all 1.4s ease-in-out 0s;
+}
+
+.flip-img-logo ul li .back {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 1.4s ease-in-out 0s;
+    -o-transition: all 1.4s ease-in-out 0s;
+    transition: all 1.4s ease-in-out 0s;
+}
+
+.flip-img-logo ul li.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-img-logo ul li.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.item-container1 .item .flip-img-logo .logo-img {
+    width: 224px;
+    min-height: 224px;
+    background-size: 94%;
+    background-image:url(images/Metalatte-logo.png);
+    background-color: #ff514a;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 990;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.itemlogo {
+    width: 90px;
+}
+
+#prlx {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#cprlx {
+    display: block;
+    height: 150%;
+    width: 100%;
+    position: fixed;
+    background-image: url(images/moon-1180345_1920.jpg);
+    z-index: -1;
+}
+
+#prlxlogo {
+    position: fixed;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.introimg {
+    background: url('images/coffeebean.jpg') no-repeat;
+    width: 100%;
+    position: fixed;
+    background-position: bottom center;
+    background-size: cover;
+    height: 100%;
+    z-index: -11;
+}
+
+.img {
+    background: url(images/Metalatte-logo.png) no-repeat;
+    width: 50%;
+    position: fixed;
+    background-position: center center;
+    background-size: contain;
+    height: 100%;
+    margin-left:  25%;
+    margin-right: 25%;
+    z-index: -10;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 3805.6px;
+    height: 317px;
+    z-index: 20;
+}
+
+.carousel .item-container img {
+    z-index: 20;
+}
+
+#notprlx img {
+    width: 100%;
+}
+
+.midimg {
+    
+    background-image: url('images/cappuccino.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    
+}
+
+.endimg {
+    
+    background-image: url('images/coffeeshop.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    
+}
+
+/*******************
+        Footer
+********************/
+
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: #a87653;
+    color:#f78623;
+}
+
+
+
+/*********************
+Responsive Media Queries 
+**********************/
+
+@media all and (max-width: 800px) {
+  nav .nav-menu.responsive {position: none;}
+  nav .nav-wrap .nav-menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav .nav-wrap .nav-menu.responsive {width:100%;}
+  nav .nav-wrap .nav-menu.responsive a {
+    display: block;
+    text-align: center;
+  }
+  .section{
+      height: auto;
+  }
+  div[class$="img"]{
+    min-height: 550px;
+    line-height: 550px;
+  }
+  .wrap .item-container .item, .wrap .item-container1 .item {
+    float: none;
+    width: 100%;
+  }
+  .introimg {
+    position: relative;    
+  }    
+
+   #prlx, #prlxlogo {
+    display: none;     
+  }
+   #notprlx {
+    display: block;
+  }
+  #notprlx .introimg img{
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: -15%;
+  }  
+}
+
+@media all and (max-width: 800px) {
+  nav .nav-wrap .nav-menu a {
+      display: none;
+    }
+  nav .nav-wrap a.icon {
+      margin: 0 auto;
+      float: right;
+      display: block;
+  }
+}

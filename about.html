@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Metalatte | About</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrap">
+                    <a href="#" class="logo"><img src="images/Metalatte-logo.png"></a>
+                    <div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <li><i class="fa fa-bars"></i></li></a>
+                    </div>
+                    <ul class="nav-menu" id="myNav">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Drinks</li></a>
+                        <a href="#"><li>Grubs</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myNav");
+            if (x.className === "nav-menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-menu";
+            }
+        }
+        </script>
+    </body>
+</html>
