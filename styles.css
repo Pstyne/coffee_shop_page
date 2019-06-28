@@ -113,6 +113,7 @@ nav .nav-wrap .nav-menu  a {
 
 .section {
     z-index: 1;
+    width: 100vw;
 }
 
 .section:nth-child(even) {
@@ -519,14 +520,20 @@ Responsive Media Queries
   }
   .section{
       height: auto;
+      width: 100vw;
   }
   div[class$="img"]{
     min-height: 550px;
     line-height: 550px;
   }
+  .flip-img-logo {
+      width: auto;
+  }
+  .wrap .item-container , .wrap .item-container1 {
+      width: 400px;
+  }
   .wrap .item-container .item, .wrap .item-container1 .item {
     float: none;
-    width: 100%;
   }
   .introimg {
     position: relative;    
