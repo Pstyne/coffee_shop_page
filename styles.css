@@ -528,9 +528,17 @@ Responsive Media Queries
   }
   .flip-img-logo {
       width: auto;
+      height: 380px;
+  }
+  .flip-img-logo ul li {
+      height: 182px;
+  }
+  .item-container1 .item .flip-img-logo .logo-img {
+      min-height: 182px;
+      width: 182px;
   }
   .wrap .item-container , .wrap .item-container1 {
-      width: 400px;
+      width: 370px;
   }
   .wrap .item-container .item, .wrap .item-container1 .item {
     float: none;
@@ -538,7 +546,9 @@ Responsive Media Queries
   .introimg {
     position: relative;    
   }    
-
+  .item-container-padding {
+      padding-right: 0px;
+  }
    #prlx, #prlxlogo {
     display: none;     
   }
