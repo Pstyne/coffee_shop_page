@@ -538,7 +538,7 @@ Responsive Media Queries
       width: 182px;
   }
   .wrap .item-container , .wrap .item-container1 {
-      width: 322px;
+      width: 350px;
   }
   .wrap .item-container .item, .wrap .item-container1 .item {
     float: none;
