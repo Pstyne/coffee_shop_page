@@ -193,30 +193,32 @@
             <div class="wrap">
                 <div class="row gal-top"><h1>Gallery</h1></div>
             </div>
-            <div class="carousel">
-                <div class="item-container">
-                    <img width="475.7" src="images/bird-818153_1920.jpg">
-                </div>
-                <div class="item-container">
-                    <img width="475.7" src="images/chocolate-cake.jpg">
-                </div>
-                <div class="item-container">
-                    <img width="475.7" src="images/coffee-671981_1920.jpg">
-                </div>
-                <div class="item-container">
-                    <img width="475.7" src="images/coffee-1704926_1920.jpg">
-                </div>
-                <div class="item-container">
-                    <img width="475.7" src="images/bird-818153_1920.jpg">
-                </div>
-                <div class="item-container">
-                    <img width="475.7" src="images/chocolate-cake.jpg">
-                </div>
-                <div class="item-container">
-                    <img width="475.7" src="images/coffee-671981_1920.jpg">
-                </div>
-                <div class="item-container">
-                    <img width="475.7" src="images/coffee-1704926_1920.jpg">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="item-container">
+                        <img width="475.7" src="images/bird-818153_1920.jpg">
+                    </div>
+                    <div class="item-container">
+                        <img width="475.7" src="images/chocolate-cake.jpg">
+                    </div>
+                    <div class="item-container">
+                        <img width="475.7" src="images/coffee-671981_1920.jpg">
+                    </div>
+                    <div class="item-container">
+                        <img width="475.7" src="images/coffee-1704926_1920.jpg">
+                    </div>
+                    <div class="item-container">
+                        <img width="475.7" src="images/bird-818153_1920.jpg">
+                    </div>
+                    <div class="item-container">
+                        <img width="475.7" src="images/chocolate-cake.jpg">
+                    </div>
+                    <div class="item-container">
+                        <img width="475.7" src="images/coffee-671981_1920.jpg">
+                    </div>
+                    <div class="item-container">
+                        <img width="475.7" src="images/coffee-1704926_1920.jpg">
+                    </div>
                 </div>
             </div>
             <div class="wrap">
@@ -321,6 +323,10 @@
         }
         
         function slider(car) {
+
+            var x = window.matchMedia("(max-width: 800px)").matches
+            console.log(x)
+
             if (!document.onmousedown) {
                 var pos1 = 0, pos2 = 0;
                 var imgArray = document.querySelector("div.carousel").querySelectorAll("div.item-container");
@@ -358,36 +364,96 @@
                     var left = car.offsetLeft-pos1;
                     e = e || window.event;
                     if(left <= -130 && left >= -280){
+
                         car.style.transition = "all .3s";
-                        car.style.left = "-475.7px";
+                        
+                        if (x) {
+                            car.style.left = "-365px";
+                        } else {
+                            car.style.left = "-475.7px";
+                        }
+
                     } else if(left <= -520 && left >= -745){
+                        
                         car.style.transition = "all .3s";
-                        car.style.left = "-951.4px";
+
+                        if (x) {
+                            car.style.left = "-730px";
+                        } else {
+                            car.style.left = "-951.4px";
+                        }
+
                     } else if(left <= -1020 && left >= -1200){
+
                         car.style.transition = "all .3s";
-                        car.style.left = "-1427.1px";
+
+                        if (x) {
+                            car.style.left = "-1095px";
+                        } else {
+                            car.style.left = "-1427.1px";
+                        }
+
                     } else if(left <= -1530 && left >= -1730){
+
                         car.style.transition = "all .3s";
-                        car.style.left = "-1902.8px";
+
+                        if (x) {
+                            car.style.left = "-1460px";
+                        } else {
+                            car.style.left = "-1902.8px";
+                        }
+                        
+
                     } else if(left <= -300 && left >= -450){
+
                         car.style.transition = "all .3s";
-                        car.style.left = "0px"
+                        
+                        car.style.left = "0px";
+
                     } else if(left <= -750 && left >= -910){
+
                         car.style.transition = "all .3s";
-                        car.style.left = "-475.7px"
+
+                        if (x) {
+                            car.style.left = "-365px";
+                        } else {
+                            car.style.left = "-475.7px";
+                        }
+
                     } else if(left <= -1210 && left >= -1450){
+
                         car.style.transition = "all .3s";
-                        car.style.left = "-951.4px"
+                        if (x) {
+                            car.style.left = "-730px";
+                        } else {
+                            car.style.left = "-951.4px";
+                        }
+
                     } else if(left <= -1740 && left >= -1870){
+
                         car.style.transition = "all .3s";
-                        car.style.left = "-1427.1px"
+                        if (x) {
+                            car.style.left = "-1095px";
+                        } else {
+                            car.style.left = "-1427.1px";
+                        }
+
                     } else if(left <= -1900){
+                        
                         car.style.transition = "all .3s";
-                        car.style.left = "-1902.8px"
+                        if (x) {
+                            car.style.left = "-1460px";
+                        } else {
+                            car.style.left = "-1902.8px";
+                        }
+
                     } else {
+
                         car.style.transition = "all .3s";
-                        car.style.left = "0px"
+                        car.style.left = "0px";
+
                     }
+
                     document.onmousemove = null;
                 }
             }

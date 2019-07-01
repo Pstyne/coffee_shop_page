@@ -451,6 +451,10 @@ img[src*="house2"] {
     z-index: -10;
 }
 
+.carousel-container {
+    width: auto;
+}
+
 .carousel {
     overflow: hidden;
     position: relative;
@@ -548,6 +552,25 @@ Responsive Media Queries
   }    
   .item-container-padding {
       padding-right: 0px;
+  }
+  .item-container .img-container img, .item-container1 .img-container img, .item-container1 .img-container2 img {
+      text-align: left;
+      width: 334px;
+      height: 240px;
+  }
+  .item-container .img-container img {
+      float: left;
+      height: auto;
+  }
+  .carousel-container {
+      width: 365px;
+      height: 240px;
+      position: relative;
+      left: 15px;
+      overflow: hidden;
+  }
+  .carousel .item-container img {
+      width: 365px;
   }
    #prlx, #prlxlogo {
     display: none;     
