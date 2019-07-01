@@ -330,7 +330,6 @@
         function slider(car) {
 
             var x = window.matchMedia("(max-width: 800px)").matches
-            console.log(x)
 
             if (!document.onmousedown || !document.ontouchstart) {
                 var pos1 = 0, pos2 = 0;
@@ -386,7 +385,7 @@
                 function stopDrag(e) {
                     var left = car.offsetLeft-pos1;
                     e = e || window.event;
-                    if(left <= -130 && left >= -280){
+                    if(left >= -355 && pos1 > 0){
 
                         car.style.transition = "all .3s";
                         
@@ -396,7 +395,7 @@
                             car.style.left = "-475.7px";
                         }
 
-                    } else if(left <= -520 && left >= -745){
+                    } else if(left >= -710 && pos1 > 0){
                         
                         car.style.transition = "all .3s";
 
@@ -406,7 +405,7 @@
                             car.style.left = "-951.4px";
                         }
 
-                    } else if(left <= -1020 && left >= -1200){
+                    } else if(left >= -1065 && pos1 > 0){
 
                         car.style.transition = "all .3s";
 
@@ -416,7 +415,7 @@
                             car.style.left = "-1427.1px";
                         }
 
-                    } else if(left <= -1530 && left >= -1730){
+                    } else if(left >= -1420 && pos1 > 0){
 
                         car.style.transition = "all .3s";
 
@@ -427,13 +426,13 @@
                         }
                         
 
-                    } else if(left <= -300 && left >= -450){
+                    } else if(left <= -355 && pos1 < 0){
 
                         car.style.transition = "all .3s";
                         
                         car.style.left = "0px";
 
-                    } else if(left <= -750 && left >= -910){
+                    } else if(left <= -710 && pos1 < 0){
 
                         car.style.transition = "all .3s";
 
@@ -443,7 +442,7 @@
                             car.style.left = "-475.7px";
                         }
 
-                    } else if(left <= -1210 && left >= -1450){
+                    } else if(left <= -1065 && pos1 < 0){
 
                         car.style.transition = "all .3s";
                         if (x) {
@@ -452,7 +451,7 @@
                             car.style.left = "-951.4px";
                         }
 
-                    } else if(left <= -1740 && left >= -1870){
+                    } else if(left <= -1420 && pos1 < 0){
 
                         car.style.transition = "all .3s";
                         if (x) {

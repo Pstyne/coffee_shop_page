@@ -453,6 +453,7 @@ img[src*="house2"] {
 
 .carousel-container {
     width: auto;
+    overflow: hidden;
 }
 
 .carousel {
@@ -577,6 +578,7 @@ Responsive Media Queries
   }
    #notprlx {
     display: block;
+    width: 107vw;
   }
   #notprlx .introimg img{
     width: 100%;
@@ -584,6 +586,9 @@ Responsive Media Queries
     padding-right: 25%;
     margin-bottom: -15%;
   }  
+  footer {
+      width: 107vw;
+  }
 }
 
 @media all and (max-width: 800px) {
