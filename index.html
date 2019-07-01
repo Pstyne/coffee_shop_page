@@ -332,8 +332,10 @@
                 var imgArray = document.querySelector("div.carousel").querySelectorAll("div.item-container");
                 if (document.querySelector("div.carousel")) {
                     document.querySelector("div.carousel").onmousedown = drag;
+                    document.querySelector("div.carousel").ontouchstart = drag;
                 } else {
                     car.onmousedown = drag;
+                    car.ontouchstart = drag;
                 }
 
                 function drag(e) {
@@ -342,6 +344,8 @@
                     pos2 = e.clientX;
                     document.onmousemove = dragCar;
                     document.onmouseup = stopDrag;
+                    document.ontouchmove = dragCar;
+                    document.ontouchend = stopDrag;
                 }
 
                 function dragCar(e) {
@@ -358,6 +362,7 @@
                         car.style.transition = "all";
                     }
                     document.onmouseup = stopDrag;
+                    document.ontouchend = stopDrag;
                 }
 
                 function stopDrag(e) {
@@ -368,7 +373,7 @@
                         car.style.transition = "all .3s";
                         
                         if (x) {
-                            car.style.left = "-365px";
+                            car.style.left = "-334px";
                         } else {
                             car.style.left = "-475.7px";
                         }
@@ -378,7 +383,7 @@
                         car.style.transition = "all .3s";
 
                         if (x) {
-                            car.style.left = "-730px";
+                            car.style.left = "-668px";
                         } else {
                             car.style.left = "-951.4px";
                         }
@@ -388,7 +393,7 @@
                         car.style.transition = "all .3s";
 
                         if (x) {
-                            car.style.left = "-1095px";
+                            car.style.left = "-1002px";
                         } else {
                             car.style.left = "-1427.1px";
                         }
@@ -398,7 +403,7 @@
                         car.style.transition = "all .3s";
 
                         if (x) {
-                            car.style.left = "-1460px";
+                            car.style.left = "-1336px";
                         } else {
                             car.style.left = "-1902.8px";
                         }
@@ -415,7 +420,7 @@
                         car.style.transition = "all .3s";
 
                         if (x) {
-                            car.style.left = "-365px";
+                            car.style.left = "-334px";
                         } else {
                             car.style.left = "-475.7px";
                         }
@@ -424,7 +429,7 @@
 
                         car.style.transition = "all .3s";
                         if (x) {
-                            car.style.left = "-730px";
+                            car.style.left = "-668px";
                         } else {
                             car.style.left = "-951.4px";
                         }
@@ -433,7 +438,7 @@
 
                         car.style.transition = "all .3s";
                         if (x) {
-                            car.style.left = "-1095px";
+                            car.style.left = "-1002px";
                         } else {
                             car.style.left = "-1427.1px";
                         }
@@ -442,7 +447,7 @@
                         
                         car.style.transition = "all .3s";
                         if (x) {
-                            car.style.left = "-1460px";
+                            car.style.left = "-1336px";
                         } else {
                             car.style.left = "-1902.8px";
                         }
